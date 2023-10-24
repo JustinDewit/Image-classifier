@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+*.venv
+*.pyenv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store  # For Mac
+Thumbs.db  # For Windows
+
+# IDEs and editors
+.vscode/  # Visual Studio Code specific settings and cache
+.idea/    # For PyCharm
+*.swp     # For Vim
+
+# Flask specific
+instance/
+
+# Django specific
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+
+# TensorFlow / PyTorch (if you save models locally, be careful about pushing large files)
+*.h5  # Saved TensorFlow model format
+*.pt  # Saved PyTorch model format
+
+# Other
+*.bak  # Backup files
+*.swp  # Swap files (for Vim)
+*.swo  # Swap files (for Vim)
