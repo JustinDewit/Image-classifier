@@ -42,6 +42,12 @@ media/
 *.h5  # Saved TensorFlow model format
 *.pt  # Saved PyTorch model format
 
+# Dataset directory
+Dataset/
+
+# Models directory
+Models/
+
 # Other
 *.bak  # Backup files
 *.swp  # Swap files (for Vim)
