@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify
 import tensorflow as tf
+import numpy as np
 
 app = Flask(__name__)
 
 # Load your trained model
-model = tf.keras.models.load_model('Models/your_model_name.h5')
+model = tf.keras.models.load_model('Models/custom_resnet_model.h5')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -26,7 +27,7 @@ def predict():
     predictions = model.predict(image_array)
     # Translate predictions to your classes
     classes = ['cat', 'dog', 'bird']
-    predicted_class = classes[int(predictions[0][0])]
+    predicted_class = classes[np.argmax(predictions[0])]
 
     return jsonify({'prediction': predicted_class})
 
