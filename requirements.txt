@@ -1,3 +1,4 @@
-tensorflow==2.14.0  # Replace "x" with the exact version you're using, for consistency.
-kaggle==1.5.16   # This version number might change, so check the current one if needed.
-flask            # Add version if you want to specify.
+tensorflow==2.14.0
+kaggle==1.5.16
+flask==3.0.0
+pillow==10.1.0
