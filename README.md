@@ -1,4 +1,6 @@
-# Image Classifier Web Application
+# Cat, dog, Bird Image Classifier
+#### Video Demo:  <https://www.youtube.com/watch?v=hWQxfbtyTk8>
+#### Description: This Image Classifier Web App seamlessly integrates Flask and TensorFlow's ResNet50 to accurately categorize uploaded images as cats, dogs, or birds.
 
 An interactive web application that allows users to upload images and receive predictions on whether the image contains a cat, dog, or bird, utilizing a deep learning model built on TensorFlow's ResNet architecture.
 
