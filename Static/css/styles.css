@@ -1,46 +1,55 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f7f9fc;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
+    width: 80%;
     max-width: 800px;
-    margin: 50px auto;
     background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .btn {
     display: block;
-    width: 100%;
+    width: 60%;
     padding: 10px 15px;
-    margin-top: 20px;
-    background-color: #333;
+    margin: 20px auto;
+    background-color: #007BFF;
     border: none;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #555;
+    background-color: #0056b3;
 }
 
 #uploaded-image {
     display: block;
-    max-width: 100%;   /* ensure the image does not exceed the container width */
-    max-height: 80vh;  /* set a max height based on viewport height */
-    margin: 20px auto; /* center the image */
-    border: 1px solid #ddd;
+    max-width: 100%;
+    max-height: 80vh;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#prediction-text {
+#resultText {
     text-align: center;
     font-size: 24px;
     margin-top: 20px;
     color: #333;
+    font-weight: bold;
 }
