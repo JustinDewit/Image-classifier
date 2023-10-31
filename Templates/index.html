@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Image Classifier</h1>
+    <form id="upload-form" enctype="multipart/form-data" method="post">
+        <input type="file" name="file" id="fileInput" accept="image/*" required>
+        <button type="button" onclick="classifyImage()">Classify</button>
+    </form>
+
+    <div class="result-container">
+        <img id="uploaded-image" src="" alt="Uploaded Image">
+        <p id="resultText"></p>
+    </div>
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
